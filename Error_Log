@@ -1,0 +1,61 @@
+intel/linux-intel-lts.git:
+fatal: unable to access 'https://github.com/intel/linux-intel-lts.git/': GnuTLS recv error (-54): Error in the pull function.
+
+error: Cannot fetch intel/linux-intel-lts.git from https://github.com/intel/linux-intel-lts.git
+Fetching: 91% [2 jobs] (21/23) finished intel/linux-intel-lts.Fetching: 91% [2 jobs] (21/23) started intel/linux-intel-lts.git
+intel/linux-intel-lts.git:
+fatal: Not a git repository: '/home/b656/.repo/projects/managed/linux-intel-ese-lts-rt-5.4.git'
+
+error: Cannot fetch intel/mainline-tracking.git from https://github.com/intel/mainline-tracking.git
+Fetching: 95% [2 jobs] (22/23) finished intel/mainline-tracking.git
+intel/linux-intel-lts.git:
+fatal: Not a git repository: '/home/b656/.repo/projects/managed/linux-intel-ese-lts-rt-5.4.git'
+
+error: Cannot fetch intel/linux-intel-lts.git from https://github.com/intel/linux-intel-lts.git
+Fetching: 100% [1 job] (23/23) finished intel/linux-intel-lts.Fetching: 100% (23/23), done in 1h4m37.090s
+managed/linux-intel-ese-lts-5.4: Shared project intel/linux-intel-lts.git found, disabling pruning.
+managed/linux-intel-ese-lts-rt-5.4: Shared project intel/linux-intel-lts.git found, disabling pruning.
+managed/yocto-kernel-cache: Shared project yocto-kernel-cache found, disabling pruning.
+managed/yocto-kernel-cache-5.10: Shared project yocto-kernel-cache found, disabling pruning.
+managed/yocto-kernel-cache-5.4: Shared project yocto-kernel-cache found, disabling pruning.
+fatal: failed to unpack tree object HEAD
+error: Cannot checkout intel/linux-intel-lts.git: GitError: Cannot initialize work tree for intel/linux-intel-lts.git
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/lib/python3.6/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/home/b656/.repo/repo/subcmds/sync.py", line 484, in _CheckoutOne
+    project.Sync_LocalHalf(syncbuf, force_sync=opt.force_sync)
+  File "/home/b656/.repo/repo/project.py", line 1225, in Sync_LocalHalf
+    self._InitWorkTree(force_sync=force_sync, submodules=submodules)
+  File "/home/b656/.repo/repo/project.py", line 2785, in _InitWorkTree
+    raise GitError('Cannot initialize work tree for ' + self.name)
+error.GitError: Cannot initialize work tree for intel/linux-intel-lts.git
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/b656/.repo/repo/main.py", line 630, in <module>
+    _Main(sys.argv[1:])
+  File "/home/b656/.repo/repo/main.py", line 604, in _Main
+    result = run()
+  File "/home/b656/.repo/repo/main.py", line 597, in <lambda>
+    run = lambda: repo._Run(name, gopts, argv) or 0
+  File "/home/b656/.repo/repo/main.py", line 261, in _Run
+    result = cmd.Execute(copts, cargs)
+  File "/home/b656/.repo/repo/subcmds/sync.py", line 952, in Execute
+    err_checkout = not self._Checkout(all_projects, opt, err_results)
+  File "/home/b656/.repo/repo/subcmds/sync.py", line 535, in _Checkout
+    if not _ProcessResults(results):
+  File "/home/b656/.repo/repo/subcmds/sync.py", line 513, in _ProcessResults
+    for (success, project, start, finish) in results:
+  File "/usr/lib/python3.6/multiprocessing/pool.py", line 347, in <genexpr>
+    return (item for chunk in result for item in chunk)
+  File "/usr/lib/python3.6/multiprocessing/pool.py", line 735, in next
+    raise value
+error.GitError: Cannot initialize work tree for intel/linux-intel-lts.git
+
