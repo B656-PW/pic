@@ -1,3 +1,4 @@
+repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-58_tgl_u-mr1 -g all
 repo sync -c -j8 --force-sync
 repo forall managed/* -c git branch -f BUILD HEAD
 
