@@ -1,0 +1,50 @@
+repo sync -c -j8 --force-sync
+repo forall managed/* -c git branch -f BUILD HEAD
+
+cd <work_dir>/build/conf
+vi local.conf
+#append bmap-tools
+IMAGE_INSTALL_append = " bmap-tools"
+
+vi <work_dir>/build/conf/multiconfig/x86-common.inc
+IMAGE_INSTALL_append = " iotg-tsn-ref-sw"
+
+vi <work_dir>/intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main/recipes-bsp/shim/shim_15.bb
+SRC_URI = "gitsm://github.com/rhboot/shim.git;protocol=https;nobranch=1 \
+"gitsm://github.com/rhboot/shim.git;protocol=https;nobranch=1 \
+
+mkdir <work_dir>/proprietary
+unzip yocto_project_mr1_release.zip
+tar -xvf <file_name>.tar.gz
+
+cd <work_dir>/build/conf
+{TOPDIR}/../proprietary/meta-intel-wireless \
+
+${TOPDIR}/../proprietary/meta-ptcm \
+IMAGE_INSTALL_append = " ptcm"
+PTCM_INSTALL = "1"
+
+tar -xvf meta-intel-tcc-deps.tar.gz -C <work_dir>/proprietary
+
+cd <work_dir>/proprietary/meta-intel-tcc-deps && bash tcc_deps_integrate_bsp.sh
+
+vi <work_dir>/proprietary/meta-intel-tcc-deps/recipes-kernel/linux/linux-intel-ese-lts-rt-5.4_%.bbappend
+KERNEL_FEATURES_append = " tcc/no_dev_mem.cfg"
+
+mkdir <work_dir>/proprietary/meta-intel-tcc-deps/recipes- kernel/linux/tcc
+
+. ../intel-embedded-system-enabling/oe-init-build-env .
+
+bitbake mc:x86:core-image-sato-sdk
+
+. ../intel-embedded-system-enabling/oe-init-build-env .
+
+curl -Lo bmaptool https://github.com/01org/bmap-tools/releases/download/v3.4/bmaptool && chmod +x bmaptool
+
+pip3 install six
+
+sudo ./bmaptool copy --bmap <path>/core-image-sato-xxx-<date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
+
+bzip2 -k core-image-sato-xxx-<date>.wic
+
+
