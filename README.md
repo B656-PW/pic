@@ -1,3 +1,3 @@
 ### Yocto Project temp files
 
-Consists of the command of Yocto prokect
+Consists of the commands of Yocto Project
