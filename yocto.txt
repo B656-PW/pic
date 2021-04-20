@@ -34,11 +34,10 @@ KERNEL_FEATURES_append = " tcc/no_dev_mem.cfg"
 
 mkdir <work_dir>/proprietary/meta-intel-tcc-deps/recipes- kernel/linux/tcc
 
+Build BSP
 . ../intel-embedded-system-enabling/oe-init-build-env .
-
 bitbake mc:x86:core-image-sato-sdk
-
-. ../intel-embedded-system-enabling/oe-init-build-env .
+bitbake -c cleansstate mc:x86:linux-intel-ese-lts-5.4
 
 curl -Lo bmaptool https://github.com/01org/bmap-tools/releases/download/v3.4/bmaptool && chmod +x bmaptool
 
