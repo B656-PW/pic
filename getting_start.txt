@@ -1,0 +1,51 @@
+For tools
+sudo apt-get install gawk wget git-core diffstat unzip \ texinfo gcc-multilib build-essential chrpath socat
+sudo apt-get install libsdl1.2-dev xterm
+sudo apt-get install make xsltproc docbook-utils fop dblatex xmlto
+sudo apt-get install autoconf automake libtool libglib2.0-dev
+sudo apt-get install xutils-dev nfs-common
+
+/home/<username>/.gitconfig
+[user]
+email = <your.name>@<your_domain>.com
+name = <Your Name>
+[sendemail]
+smtpserver = <Your organization’s SMTP server address>
+signedoffcc = false
+suppresscc = all
+chainreplyto = false
+assume8bitEncoding = utf-8
+from = <Your Name> <your.name@your_domain.com>
+confirm = always
+[color "grep"]
+match = red
+[color]
+diff = auto
+ui = auto
+interactive = auto
+grep = always
+[alias]
+co = checkout
+br = branch
+ci = commit
+st = status
+ol = log –oneline
+[core]
+editor = gedit OR vi
+
+ssh key : https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+i. Generating a new SSH Key and adding it to the ssh-agent
+    ssh-keygen -t rsa -b 4096 -C "kristen.lim@portwell.com.tw"
+    eval $(ssh-agent -s)
+    ssh-add ~/.ssh/id.rsa
+ii. Adding a new SSH key to your GitHub account
+iv. Testing your SSH connection
+      ssh -T git@github.com
+
+~/.ssh/config
+host github.com
+user git
+hostname ssh.github.com
+identityfile ~/.ssh/id_rsa
+port 443
+
