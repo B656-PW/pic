@@ -1,3 +1,22 @@
+Install require toolchain
+sudo apt-get -y install socat gawk wget git-core diffstat unzip texinfo build-essential chrpath libncurses5-dev patchutils curl
+curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo -E bash
+sudo apt-get install git-lfs
+
+Install require GCC version
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo -E apt-get update
+sudo -E apt-get install gcc-8 g++-8
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 60 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+sudo update-alternatives --config gcc
+
+Getting Start with BSP
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+mkdir <workdir>
+cd <workdir>
 repo init -u git@github.com:intel/iotg-yocto-ese-manifest.git -b refs/tags/release-58_tgl_u-mr1 -g all
 repo sync -c -j8 --force-sync
 repo forall managed/* -c git branch -f BUILD HEAD
@@ -10,18 +29,23 @@ IMAGE_INSTALL_append = " bmap-tools"
 vi <work_dir>/build/conf/multiconfig/x86-common.inc
 IMAGE_INSTALL_append = " iotg-tsn-ref-sw"
 
+secure boot
+
 vi <work_dir>/intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-main/recipes-bsp/shim/shim_15.bb
 SRC_URI = "gitsm://github.com/rhboot/shim.git;protocol=https;nobranch=1 \
 "gitsm://github.com/rhboot/shim.git;protocol=https;nobranch=1 \
 
+Integrate proprietary components
 mkdir <work_dir>/proprietary
 unzip yocto_project_mr1_release.zip
 tar -xvf <file_name>.tar.gz
 
 cd <work_dir>/build/conf
+vi bblayers.conf
 {TOPDIR}/../proprietary/meta-intel-wireless \
-
+vi bblayers.conf
 ${TOPDIR}/../proprietary/meta-ptcm \
+vi local.conf
 IMAGE_INSTALL_append = " ptcm"
 PTCM_INSTALL = "1"
 
@@ -39,12 +63,11 @@ Build BSP
 bitbake mc:x86:core-image-sato-sdk
 bitbake -c cleansstate mc:x86:linux-intel-ese-lts-5.4
 
+
+
 curl -Lo bmaptool https://github.com/01org/bmap-tools/releases/download/v3.4/bmaptool && chmod +x bmaptool
-
 pip3 install six
-
 sudo ./bmaptool copy --bmap <path>/core-image-sato-xxx-<date>.wic.bmap <path>/core-image-sato-<date>.wic /dev/sdc
-
 bzip2 -k core-image-sato-xxx-<date>.wic
 
 
