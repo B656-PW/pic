@@ -7,15 +7,15 @@ sudo apt-get install xutils-dev nfs-common
 
 /home/<username>/.gitconfig
 [user]
-email = <your.name>@<your_domain>.com
-name = <Your Name>
+email = kristen.lim@portwell.com.tw
+name = B656-PW
 [sendemail]
-smtpserver = <Your organization’s SMTP server address>
+smtpserver = smtp@portwell.com.tw
 signedoffcc = false
 suppresscc = all
 chainreplyto = false
 assume8bitEncoding = utf-8
-from = <Your Name> <your.name@your_domain.com>
+from = B656-PW kristen.lim@portwell.com.tw
 confirm = always
 [color "grep"]
 match = red
