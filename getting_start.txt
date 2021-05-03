@@ -37,7 +37,7 @@ ssh key : https://docs.github.com/en/github/authenticating-to-github/connecting-
 i. Generating a new SSH Key and adding it to the ssh-agent
     ssh-keygen -t rsa -b 4096 -C "kristen.lim@portwell.com.tw"
     eval $(ssh-agent -s)
-    ssh-add ~/.ssh/id.rsa
+    ssh-add ~/.ssh/id_rsa
 ii. Adding a new SSH key to your GitHub account
 iv. Testing your SSH connection
       ssh -T git@github.com
