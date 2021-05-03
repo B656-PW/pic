@@ -1,13 +1,13 @@
-openssl req -newkey rsa:2048 -nodes -keyout "DB.key" -new - x509 -sha256 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
+openssl req -newkey rsa:2048 -nodes -keyout "DB.key" -new -x509 -sha256 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
 
 openssl x509 -outform DER -in "DB.crt" -out "DB.cer"
 openssl x509 -outform DER -in "PK.crt" -out "PK.cer"
 openssl x509 -outform DER -in "KEK.crt" -out "KEK.cer"
 
-openssl req -newkey rsa:2048 -nodes -keyout "DB.key" -new - x509 -sha256 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
+openssl req -newkey rsa:2048 -nodes -keyout "DB.key" -new -x509 -sha256 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
 openssl rsa -in "DB.key" -out "TestSigningPrivateKey.pem"
 
-openssl req -newkey rsa:3072 -nodes -keyout "DB.key" -new - x509 -sha384 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
+openssl req -newkey rsa:3072 -nodes -keyout "DB.key" -new -x509 -sha384 -days 3650 -subj "/CN=$HOSTNAME" -out "DB.crt"
 openssl rsa -in "DB.key" -out "TestSigningPrivateKey_RSA3072.pem"
 
 PREGENERATED_SIGNING_KEY_TYPE = "sha256"
