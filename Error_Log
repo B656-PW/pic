@@ -1,61 +1,897 @@
-intel/linux-intel-lts.git:
-fatal: unable to access 'https://github.com/intel/linux-intel-lts.git/': GnuTLS recv error (-54): Error in the pull function.
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
 
-error: Cannot fetch intel/linux-intel-lts.git from https://github.com/intel/linux-intel-lts.git
-Fetching: 91% [2 jobs] (21/23) finished intel/linux-intel-lts.Fetching: 91% [2 jobs] (21/23) started intel/linux-intel-lts.git
-intel/linux-intel-lts.git:
-fatal: Not a git repository: '/home/b656/.repo/projects/managed/linux-intel-ese-lts-rt-5.4.git'
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
 
-error: Cannot fetch intel/mainline-tracking.git from https://github.com/intel/mainline-tracking.git
-Fetching: 95% [2 jobs] (22/23) finished intel/mainline-tracking.git
-intel/linux-intel-lts.git:
-fatal: Not a git repository: '/home/b656/.repo/projects/managed/linux-intel-ese-lts-rt-5.4.git'
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
 
-error: Cannot fetch intel/linux-intel-lts.git from https://github.com/intel/linux-intel-lts.git
-Fetching: 100% [1 job] (23/23) finished intel/linux-intel-lts.Fetching: 100% (23/23), done in 1h4m37.090s
-managed/linux-intel-ese-lts-5.4: Shared project intel/linux-intel-lts.git found, disabling pruning.
-managed/linux-intel-ese-lts-rt-5.4: Shared project intel/linux-intel-lts.git found, disabling pruning.
-managed/yocto-kernel-cache: Shared project yocto-kernel-cache found, disabling pruning.
-managed/yocto-kernel-cache-5.10: Shared project yocto-kernel-cache found, disabling pruning.
-managed/yocto-kernel-cache-5.4: Shared project yocto-kernel-cache found, disabling pruning.
-fatal: failed to unpack tree object HEAD
-error: Cannot checkout intel/linux-intel-lts.git: GitError: Cannot initialize work tree for intel/linux-intel-lts.git
-multiprocessing.pool.RemoteTraceback: 
-"""
-Traceback (most recent call last):
-  File "/usr/lib/python3.6/multiprocessing/pool.py", line 119, in worker
-    result = (True, func(*args, **kwds))
-  File "/usr/lib/python3.6/multiprocessing/pool.py", line 44, in mapstar
-    return list(map(*args))
-  File "/home/b656/.repo/repo/subcmds/sync.py", line 484, in _CheckoutOne
-    project.Sync_LocalHalf(syncbuf, force_sync=opt.force_sync)
-  File "/home/b656/.repo/repo/project.py", line 1225, in Sync_LocalHalf
-    self._InitWorkTree(force_sync=force_sync, submodules=submodules)
-  File "/home/b656/.repo/repo/project.py", line 2785, in _InitWorkTree
-    raise GitError('Cannot initialize work tree for ' + self.name)
-error.GitError: Cannot initialize work tree for intel/linux-intel-lts.git
-"""
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
 
-The above exception was the direct cause of the following exception:
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers
+***********************************************************************
 
-Traceback (most recent call last):
-  File "/home/b656/.repo/repo/main.py", line 630, in <module>
-    _Main(sys.argv[1:])
-  File "/home/b656/.repo/repo/main.py", line 604, in _Main
-    result = run()
-  File "/home/b656/.repo/repo/main.py", line 597, in <lambda>
-    run = lambda: repo._Run(name, gopts, argv) or 0
-  File "/home/b656/.repo/repo/main.py", line 261, in _Run
-    result = cmd.Execute(copts, cargs)
-  File "/home/b656/.repo/repo/subcmds/sync.py", line 952, in Execute
-    err_checkout = not self._Checkout(all_projects, opt, err_results)
-  File "/home/b656/.repo/repo/subcmds/sync.py", line 535, in _Checkout
-    if not _ProcessResults(results):
-  File "/home/b656/.repo/repo/subcmds/sync.py", line 513, in _ProcessResults
-    for (success, project, start, finish) in results:
-  File "/usr/lib/python3.6/multiprocessing/pool.py", line 347, in <genexpr>
-    return (item for chunk in result for item in chunk)
-  File "/usr/lib/python3.6/multiprocessing/pool.py", line 735, in next
-    raise value
-error.GitError: Cannot initialize work tree for intel/linux-intel-lts.git
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers
+***********************************************************************
 
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_5.4.bb: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+Parsing recipes: 100% |########################| Time: 0:18:47
+Parsing of 2680 .bb files complete (0 cached, 2680 parsed). 43375 targets, 2716 skipped, 4 masked, 0 errors.
+WARNING: No bb files matched BBFILE_PATTERN_dpdk '^/home/b656/project/build/../intel-embedded-system-enabling/meta-dpdk/'
+WARNING: No bb files matched BBFILE_PATTERN_dpdk '^/home/b656/project/build/../intel-embedded-system-enabling/meta-dpdk/'
+
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: mc:x86:apparmor-2.13.4-r0 do_package: QA Issue: apparmor: Files/directories were installed but not shipped in any package:
+  /usr/lib/python3.8/site-packages/LibAppArmor-2.13.4-py3.8.egg-info
+  /usr/lib/python3.8/site-packages/apparmor-2.13.4-py3.8.egg-info
+  /usr/lib/python3.8/site-packages/apparmor
+  /usr/lib/python3.8/site-packages/apparmor/sandbox.py
+  /usr/lib/python3.8/site-packages/apparmor/rules.py
+  /usr/lib/python3.8/site-packages/apparmor/aamode.py
+  /usr/lib/python3.8/site-packages/apparmor/__init__.py
+  /usr/lib/python3.8/site-packages/apparmor/common.py
+  /usr/lib/python3.8/site-packages/apparmor/translations.py
+  /usr/lib/python3.8/site-packages/apparmor/easyprof.py
+  /usr/lib/python3.8/site-packages/apparmor/fail.py
+  /usr/lib/python3.8/site-packages/apparmor/profile_list.py
+  /usr/lib/python3.8/site-packages/apparmor/profile_storage.py
+  /usr/lib/python3.8/site-packages/apparmor/cleanprofile.py
+  /usr/lib/python3.8/site-packages/apparmor/regex.py
+  /usr/lib/python3.8/site-packages/apparmor/logparser.py
+  /usr/lib/python3.8/site-packages/apparmor/severity.py
+  /usr/lib/python3.8/site-packages/apparmor/aare.py
+  /usr/lib/python3.8/site-packages/apparmor/tools.py
+  /usr/lib/python3.8/site-packages/apparmor/config.py
+  /usr/lib/python3.8/site-packages/apparmor/aa.py
+  /usr/lib/python3.8/site-packages/apparmor/ui.py
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__
+  /usr/lib/python3.8/site-packages/apparmor/rule
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/common.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/aamode.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/tools.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/cleanprofile.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/easyprof.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/profile_list.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/logparser.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/sandbox.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/translations.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/aare.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/__init__.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/profile_storage.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/severity.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/ui.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/aa.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/rules.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/config.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/fail.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/__pycache__/regex.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/ptrace.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/__init__.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/rlimit.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/capability.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/network.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/file.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/signal.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/dbus.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/change_profile.py
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/dbus.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/capability.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/rlimit.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/signal.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/__init__.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/file.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/change_profile.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/network.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/apparmor/rule/__pycache__/ptrace.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/LibAppArmor/__init__.py
+  /usr/lib/python3.8/site-packages/LibAppArmor/LibAppArmor.py
+  /usr/lib/python3.8/site-packages/LibAppArmor/_LibAppArmor.cpython-38-x86_64-linux-gnu.so
+  /usr/lib/python3.8/site-packages/LibAppArmor/__pycache__
+  /usr/lib/python3.8/site-packages/LibAppArmor/__pycache__/LibAppArmor.cpython-38.pyc
+  /usr/lib/python3.8/site-packages/LibAppArmor/__pycache__/__init__.cpython-38.pyc
+Please set FILES such that these items are packaged. Alternatively if they are unneeded, avoid installing them or delete them within do_install.
+apparmor: 68 installed and not shipped files. [installed-vs-shipped]
+WARNING: mc:x86:gstreamer1.0-1.19.0.1-r0 do_configure: QA Issue: gstreamer1.0: configure was passed unrecognised options: test-files-path installed-tests [unknown-configure-option]
+WARNING: mc:x86:bridge-utils-1.6-r0 do_fetch: Failed to fetch URL git://git.kernel.org/pub/scm/linux/kernel/git/shemminger/bridge-utils.git, attempting MIRRORS if available
+Currently  4 running tasks (2842 of 11935)  23% |##          |
+WARNING: mc:x86:bjam-native-1.72.0-r0 do_fetch: Failed to fetch URL https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2, attempting MIRRORS if available
+WARNING: mc:x86:ocl-icd-2.2.11-r0 do_fetch: Failed to fetch URL https://forge.imag.fr/frs/download.php/814/ocl-icd-2.2.11.tar.gz, attempting MIRRORS if available
+WARNING: mc:x86:thin-provisioning-tools-0.8.5-r0 do_fetch: Failed to fetch URL git://github.com/jthornber/thin-provisioning-tools, attempting MIRRORS if available
+WARNING: mc:x86:asciidoc-native-8.6.9+py3-gitAUTOINC+618f6e6f6b-r0 do_fetch: Failed to fetch URL git://github.com/asciidoc/asciidoc-py3;protocol=https, attempting MIRRORS if available
+WARNING: mc:x86:linuxptp-3.0-r0 do_fetch: Failed to fetch URL http://sourceforge.net/projects/linuxptp/files/v3.0/linuxptp-3.0.tgz, attempting MIRRORS if available
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: mc:x86:systemd-boot-244.5-r0 do_configure: QA Issue: systemd-boot: configure was passed unrecognised options: efi-ldsdir [unknown-configure-option]
+WARNING: mc:x86:fwupdate-12-r0 do_patch: Fuzz detected:
+
+Applying patch 0001-efi-Makefile-remove-standard-system-header-file-dire.patch
+patching file efi/Makefile
+Hunk #1 succeeded at 16 with fuzz 1 (offset 1 line).
+
+The context lines in the patches can be updated with devtool:
+
+    devtool modify fwupdate
+    devtool finish --force-patch-refresh fwupdate <layer_path>
+
+Don't forget to review changes done by devtool!
+
+WARNING: mc:x86:fwupdate-12-r0 do_patch: QA Issue: Patch log indicates that patches do not apply cleanly. [patch-fuzz]
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: 
+***********************************************************************
+*** You have libc-abi-breaker-xdp set in DISTRO_FEATURES
+*** This breaks libc ABI compatibility
+*** Please also ensure the running kernel has a consistent if_xdp.h ABI
+*** and inspect the patches if needed in:
+*** /home/b656/project/build/../intel-embedded-system-enabling/meta-intel-embedded-system-enabling/meta-intel-ese-bsp/recipes-kernel/linux-libc-headers
+***********************************************************************
+
+WARNING: mc:x86:linux-intel-ese-lts-5.4-5.4++gitAUTOINC+4fa886b20f_17d8b8b5ea-r0 do_kernel_configcheck: [kernel config]: specified values did not make it into the kernel's final configuration:
+
+---------- CONFIG_VGA_CONSOLE -----------------
+Config: CONFIG_VGA_CONSOLE
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_VGA_CONSOLE=y
+#CONFIG_VGA_CONSOLE=y
+Actual value:     CONFIG_VGA_CONSOLE=y
+  Config 'VGA_CONSOLE' has the following Direct dependencies (=y):
+        !4xx(undefined/n) (=y) && !PPC_8xx(undefined/n) (=y) && !SPARC(undefined/n) (=y) && !M68K(undefined/n) (=y) && !PARISC(undefined/n) (=y) && !SUPERH(undefined/n) (=y) && !ARM(undefined/n) || ARCH_FOOTBRIDGE(undefined/n) || ARCH_INTEGRATOR(undefined/n) || ARCH_NETWINDER(undefined/n) (=y) && !ARM64(undefined/n) (=y) && !ARC(undefined/n) (=y) && !MICROBLAZE(undefined/n) (=y) && !OPENRISC(undefined/n) (=y) && !NDS32(undefined/n) (=y) && !S390(undefined/n) (=y) && VT(=y)
+
+---------- CONFIG_IDE_GD -----------------
+Config: CONFIG_IDE_GD
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD=y
+Actual value:     
+
+Config: CONFIG_IDE_GD_ATA
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD_ATA=y
+Actual value:     
+
+  Config 'IDE_GD' has the following Direct dependencies (=n):
+        IDE(=n)
+
+---------- CONFIG_IDE_GD_ATA -----------------
+Config: CONFIG_IDE_GD_ATA
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD_ATA=y
+Actual value:     
+
+  Config 'IDE_GD_ATA' has the following Direct dependencies (=n):
+        IDE_GD(=n) && IDE(=n)
+
+---------- CONFIG_BLK_DEV_PIIX -----------------
+Config: CONFIG_BLK_DEV_PIIX
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_BLK_DEV_PIIX=y
+Actual value:     
+
+No reference to BLK_DEV_PIIX found
+
+---------- CONFIG_ATH_COMMON -----------------
+Config: CONFIG_ATH_COMMON
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH_COMMON=m
+Actual value:     
+
+  Config 'ATH_COMMON' has the following Direct dependencies (=y):
+        WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_ATH5K -----------------
+Config: CONFIG_ATH5K
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH5K=m
+Actual value:     
+
+  Config 'ATH5K' has the following Direct dependencies (=n):
+        PCI(=y) || ATH25(undefined/n) (=y) && MAC80211(=n) && WLAN_VENDOR_ATH(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_ATH9K -----------------
+Config: CONFIG_ATH9K
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH9K=m
+Actual value:     
+
+  Config 'ATH9K' has the following Direct dependencies (=n):
+        MAC80211(=n) && HAS_DMA(=y) && WLAN_VENDOR_ATH(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_CRC_ITU_T -----------------
+Config: CONFIG_CRC_ITU_T
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/nfc/nfc-generic.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/nfc/nfc-generic.cfg
+Requested value:  CONFIG_CRC_ITU_T=m
+Actual value:     CONFIG_CRC_ITU_T=y
+
+  Config 'CRC_ITU_T' has the following Direct dependencies (=y):
+        y
+
+---------- CONFIG_RT73USB -----------------
+Config: CONFIG_RT73USB
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/hostapd/hostapd.cfg
+Requested value:  CONFIG_RT73USB=m
+Actual value:     
+
+No reference to RT73USB found
+
+---------- CONFIG_TCG_TIS_CORE -----------------
+Config: CONFIG_TCG_TIS_CORE
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_CORE=y
+Actual value:     CONFIG_TCG_TIS_CORE=m
+
+  Config 'TCG_TIS_CORE' has the following Direct dependencies (=m):
+        TCG_TPM(=m)
+
+---------- CONFIG_TCG_TIS_SPI -----------------
+Config: CONFIG_TCG_TIS_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_SPI=y
+Actual value:     CONFIG_TCG_TIS_SPI=m
+
+No reference to TCG_TIS_SPI found
+
+---------- CONFIG_TCG_TIS_I2C_ATMEL -----------------
+Config: CONFIG_TCG_TIS_I2C_ATMEL
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_ATMEL=y
+Actual value:     CONFIG_TCG_TIS_I2C_ATMEL=m
+
+No reference to TCG_TIS_I2C_ATMEL found
+
+---------- CONFIG_TCG_TIS_I2C_INFINEON -----------------
+Config: CONFIG_TCG_TIS_I2C_INFINEON
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_INFINEON=y
+Actual value:     CONFIG_TCG_TIS_I2C_INFINEON=m
+
+No reference to TCG_TIS_I2C_INFINEON found
+
+---------- CONFIG_TCG_TIS_I2C_NUVOTON -----------------
+Config: CONFIG_TCG_TIS_I2C_NUVOTON
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_NUVOTON=y
+Actual value:     CONFIG_TCG_TIS_I2C_NUVOTON=m
+
+No reference to TCG_TIS_I2C_NUVOTON found
+
+---------- CONFIG_TCG_NSC -----------------
+Config: CONFIG_TCG_NSC
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_NSC=y
+Actual value:     CONFIG_TCG_NSC=m
+
+No reference to TCG_NSC found
+
+---------- CONFIG_TCG_ATMEL -----------------
+Config: CONFIG_TCG_ATMEL
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_ATMEL=y
+Actual value:     CONFIG_TCG_ATMEL=m
+
+No reference to TCG_ATMEL found
+
+---------- CONFIG_TCG_INFINEON -----------------
+Config: CONFIG_TCG_INFINEON
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_INFINEON=y
+Actual value:     CONFIG_TCG_INFINEON=m
+
+No reference to TCG_INFINEON found
+
+---------- CONFIG_TCG_VTPM_PROXY -----------------
+Config: CONFIG_TCG_VTPM_PROXY
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_VTPM_PROXY=y
+Actual value:     CONFIG_TCG_VTPM_PROXY=m
+
+No reference to TCG_VTPM_PROXY found
+
+---------- CONFIG_TCG_TIS_ST33ZP24 -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24=m
+
+Config: CONFIG_TCG_TIS_ST33ZP24_I2C
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_I2C=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_I2C=m
+
+Config: CONFIG_TCG_TIS_ST33ZP24_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_SPI=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_SPI=m
+
+  Config 'TCG_TIS_ST33ZP24' has the following Direct dependencies (=m):
+        TCG_TPM(=m)
+
+---------- CONFIG_TCG_TIS_ST33ZP24_I2C -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24_I2C
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_I2C=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_I2C=m
+
+No reference to TCG_TIS_ST33ZP24_I2C found
+
+---------- CONFIG_TCG_TIS_ST33ZP24_SPI -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_SPI=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_SPI=m
+
+No reference to TCG_TIS_ST33ZP24_SPI found
+
+---------- CONFIG_LPC_ICH -----------------
+Config: CONFIG_LPC_ICH
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_LPC_ICH=m
+Actual value:     CONFIG_LPC_ICH=y
+
+  Config 'LPC_ICH' has the following Direct dependencies (=y):
+        PCI(=y) && HAS_IOMEM(=y)
+
+---------- CONFIG_RTL8723BE -----------------
+Config: CONFIG_RTL8723BE
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_RTL8723BE=m
+Actual value:     
+
+  Config 'RTL8723BE' has the following Direct dependencies (=n):
+        PCI(=y) && RTL_CARDS(=n) && WLAN_VENDOR_REALTEK(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_RTL8723BS -----------------
+Config: CONFIG_RTL8723BS
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_RTL8723BS=m
+Actual value:     
+
+No reference to RTL8723BS found
+
+---------- CONFIG_NOP_USB_XCEIV -----------------
+Config: CONFIG_NOP_USB_XCEIV
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/soc/baytrail/baytrail.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_NOP_USB_XCEIV=y
+Actual value:     CONFIG_NOP_USB_XCEIV=m
+
+  Config 'NOP_USB_XCEIV' has the following Direct dependencies (=m):
+        USB_GADGET(=m) || !USB_GADGET(=m) (=m) && USB_SUPPORT(=y)
+
+---------- CONFIG_MWIFIEX -----------------
+Config: CONFIG_MWIFIEX
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX=m
+Actual value:     
+
+Config: CONFIG_MWIFIEX_PCIE
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX_PCIE=m
+Actual value:     
+
+  Config 'MWIFIEX' has the following Direct dependencies (=n):
+        CFG80211(=n) && WLAN_VENDOR_MARVELL(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_MWIFIEX_PCIE -----------------
+Config: CONFIG_MWIFIEX_PCIE
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX_PCIE=m
+Actual value:     
+
+No reference to MWIFIEX_PCIE found
+
+---------- CONFIG_ACPI_FAN -----------------
+Config: CONFIG_ACPI_FAN
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86-acpi.cfg
+Requested value:  CONFIG_ACPI_FAN=m
+Actual value:     CONFIG_ACPI_FAN=y
+
+  Config 'ACPI_FAN' has the following Direct dependencies (=y):
+        THERMAL(=y) && ACPI(=y)
+
+---------- CONFIG_MEDIA_TUNER -----------------
+Config: CONFIG_MEDIA_TUNER
+From: /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/media/media-tuners.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/features/media/media-tuners.cfg /home/b656/project/build/tmp-x86-glibc/work-shared/intel-corei7-64/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/x86/intel-dev.cfg
+Requested value:  CONFIG_MEDIA_TUNER=y
+Actual value:     CONFIG_MEDIA_TUNER=m
+
+No reference to MEDIA_TUNER found
+
+
+WARNING: mc:x86:linux-intel-ese-lts-rt-5.4-5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0 do_kernel_configcheck: [kernel config]: specified values did not make it into the kernel's final configuration:
+
+---------- CONFIG_VGA_CONSOLE -----------------
+Config: CONFIG_VGA_CONSOLE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_VGA_CONSOLE=y
+#CONFIG_VGA_CONSOLE=y
+Actual value:     CONFIG_VGA_CONSOLE=y
+  Config 'VGA_CONSOLE' has the following Direct dependencies (=y):
+        !4xx(undefined/n) (=y) && !PPC_8xx(undefined/n) (=y) && !SPARC(undefined/n) (=y) && !M68K(undefined/n) (=y) && !PARISC(undefined/n) (=y) && !SUPERH(undefined/n) (=y) && !ARM(undefined/n) || ARCH_FOOTBRIDGE(undefined/n) || ARCH_INTEGRATOR(undefined/n) || ARCH_NETWINDER(undefined/n) (=y) && !ARM64(undefined/n) (=y) && !ARC(undefined/n) (=y) && !MICROBLAZE(undefined/n) (=y) && !OPENRISC(undefined/n) (=y) && !NDS32(undefined/n) (=y) && !S390(undefined/n) (=y) && VT(=y)
+
+---------- CONFIG_IDE_GD -----------------
+Config: CONFIG_IDE_GD
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD=y
+Actual value:     
+
+Config: CONFIG_IDE_GD_ATA
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD_ATA=y
+Actual value:     
+
+  Config 'IDE_GD' has the following Direct dependencies (=n):
+        IDE(=n)
+
+---------- CONFIG_IDE_GD_ATA -----------------
+Config: CONFIG_IDE_GD_ATA
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_IDE_GD_ATA=y
+Actual value:     
+
+  Config 'IDE_GD_ATA' has the following Direct dependencies (=n):
+        IDE_GD(=n) && IDE(=n)
+
+---------- CONFIG_BLK_DEV_PIIX -----------------
+Config: CONFIG_BLK_DEV_PIIX
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-drivers.cfg
+Requested value:  CONFIG_BLK_DEV_PIIX=y
+Actual value:     
+
+No reference to BLK_DEV_PIIX found
+
+---------- CONFIG_ATH_COMMON -----------------
+Config: CONFIG_ATH_COMMON
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH_COMMON=m
+Actual value:     
+
+  Config 'ATH_COMMON' has the following Direct dependencies (=y):
+        WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_ATH5K -----------------
+Config: CONFIG_ATH5K
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH5K=m
+Actual value:     
+
+  Config 'ATH5K' has the following Direct dependencies (=n):
+        PCI(=y) || ATH25(undefined/n) (=y) && MAC80211(=n) && WLAN_VENDOR_ATH(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_ATH9K -----------------
+Config: CONFIG_ATH9K
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/common-pc/common-pc-wifi.cfg
+Requested value:  CONFIG_ATH9K=m
+Actual value:     
+
+  Config 'ATH9K' has the following Direct dependencies (=n):
+        MAC80211(=n) && HAS_DMA(=y) && WLAN_VENDOR_ATH(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_CRC_ITU_T -----------------
+Config: CONFIG_CRC_ITU_T
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/nfc/nfc-generic.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/nfc/nfc-generic.cfg
+Requested value:  CONFIG_CRC_ITU_T=m
+Actual value:     CONFIG_CRC_ITU_T=y
+
+  Config 'CRC_ITU_T' has the following Direct dependencies (=y):
+        y
+
+---------- CONFIG_RT73USB -----------------
+Config: CONFIG_RT73USB
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/hostapd/hostapd.cfg
+Requested value:  CONFIG_RT73USB=m
+Actual value:     
+
+No reference to RT73USB found
+
+---------- CONFIG_TCG_TIS_CORE -----------------
+Config: CONFIG_TCG_TIS_CORE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_CORE=y
+Actual value:     CONFIG_TCG_TIS_CORE=m
+
+  Config 'TCG_TIS_CORE' has the following Direct dependencies (=m):
+        TCG_TPM(=m)
+
+---------- CONFIG_TCG_TIS_SPI -----------------
+Config: CONFIG_TCG_TIS_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_SPI=y
+Actual value:     CONFIG_TCG_TIS_SPI=m
+
+No reference to TCG_TIS_SPI found
+
+---------- CONFIG_TCG_TIS_I2C_ATMEL -----------------
+Config: CONFIG_TCG_TIS_I2C_ATMEL
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_ATMEL=y
+Actual value:     CONFIG_TCG_TIS_I2C_ATMEL=m
+
+No reference to TCG_TIS_I2C_ATMEL found
+
+---------- CONFIG_TCG_TIS_I2C_INFINEON -----------------
+Config: CONFIG_TCG_TIS_I2C_INFINEON
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_INFINEON=y
+Actual value:     CONFIG_TCG_TIS_I2C_INFINEON=m
+
+No reference to TCG_TIS_I2C_INFINEON found
+
+---------- CONFIG_TCG_TIS_I2C_NUVOTON -----------------
+Config: CONFIG_TCG_TIS_I2C_NUVOTON
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_I2C_NUVOTON=y
+Actual value:     CONFIG_TCG_TIS_I2C_NUVOTON=m
+
+No reference to TCG_TIS_I2C_NUVOTON found
+
+---------- CONFIG_TCG_NSC -----------------
+Config: CONFIG_TCG_NSC
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_NSC=y
+Actual value:     CONFIG_TCG_NSC=m
+
+No reference to TCG_NSC found
+
+---------- CONFIG_TCG_ATMEL -----------------
+Config: CONFIG_TCG_ATMEL
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_ATMEL=y
+Actual value:     CONFIG_TCG_ATMEL=m
+
+No reference to TCG_ATMEL found
+
+---------- CONFIG_TCG_INFINEON -----------------
+Config: CONFIG_TCG_INFINEON
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_INFINEON=y
+Actual value:     CONFIG_TCG_INFINEON=m
+
+No reference to TCG_INFINEON found
+
+---------- CONFIG_TCG_VTPM_PROXY -----------------
+Config: CONFIG_TCG_VTPM_PROXY
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_VTPM_PROXY=y
+Actual value:     CONFIG_TCG_VTPM_PROXY=m
+
+No reference to TCG_VTPM_PROXY found
+
+---------- CONFIG_TCG_TIS_ST33ZP24 -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24=m
+
+Config: CONFIG_TCG_TIS_ST33ZP24_I2C
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_I2C=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_I2C=m
+
+Config: CONFIG_TCG_TIS_ST33ZP24_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_SPI=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_SPI=m
+
+  Config 'TCG_TIS_ST33ZP24' has the following Direct dependencies (=m):
+        TCG_TPM(=m)
+
+---------- CONFIG_TCG_TIS_ST33ZP24_I2C -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24_I2C
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_I2C=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_I2C=m
+
+No reference to TCG_TIS_ST33ZP24_I2C found
+
+---------- CONFIG_TCG_TIS_ST33ZP24_SPI -----------------
+Config: CONFIG_TCG_TIS_ST33ZP24_SPI
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/tpm/tpm.cfg
+Requested value:  CONFIG_TCG_TIS_ST33ZP24_SPI=y
+Actual value:     CONFIG_TCG_TIS_ST33ZP24_SPI=m
+
+No reference to TCG_TIS_ST33ZP24_SPI found
+
+---------- CONFIG_LPC_ICH -----------------
+Config: CONFIG_LPC_ICH
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_LPC_ICH=m
+Actual value:     CONFIG_LPC_ICH=y
+
+  Config 'LPC_ICH' has the following Direct dependencies (=y):
+        PCI(=y) && HAS_IOMEM(=y)
+
+---------- CONFIG_RTL8723BE -----------------
+Config: CONFIG_RTL8723BE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_RTL8723BE=m
+Actual value:     
+
+  Config 'RTL8723BE' has the following Direct dependencies (=n):
+        PCI(=y) && RTL_CARDS(=n) && WLAN_VENDOR_REALTEK(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_RTL8723BS -----------------
+Config: CONFIG_RTL8723BS
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_RTL8723BS=m
+Actual value:     
+
+No reference to RTL8723BS found
+
+---------- CONFIG_NOP_USB_XCEIV -----------------
+Config: CONFIG_NOP_USB_XCEIV
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/soc/baytrail/baytrail.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_NOP_USB_XCEIV=y
+Actual value:     CONFIG_NOP_USB_XCEIV=m
+
+  Config 'NOP_USB_XCEIV' has the following Direct dependencies (=m):
+        USB_GADGET(=m) || !USB_GADGET(=m) (=m) && USB_SUPPORT(=y)
+
+---------- CONFIG_MWIFIEX -----------------
+Config: CONFIG_MWIFIEX
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX=m
+Actual value:     
+
+Config: CONFIG_MWIFIEX_PCIE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX_PCIE=m
+Actual value:     
+
+  Config 'MWIFIEX' has the following Direct dependencies (=n):
+        CFG80211(=n) && WLAN_VENDOR_MARVELL(=y) && WLAN(=y) && NETDEVICES(=y)
+
+---------- CONFIG_MWIFIEX_PCIE -----------------
+Config: CONFIG_MWIFIEX_PCIE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86.cfg
+Requested value:  CONFIG_MWIFIEX_PCIE=m
+Actual value:     
+
+No reference to MWIFIEX_PCIE found
+
+---------- CONFIG_ACPI_FAN -----------------
+Config: CONFIG_ACPI_FAN
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/bsp/intel-x86/intel-x86-acpi.cfg
+Requested value:  CONFIG_ACPI_FAN=m
+Actual value:     CONFIG_ACPI_FAN=y
+
+  Config 'ACPI_FAN' has the following Direct dependencies (=y):
+        THERMAL(=y) && ACPI(=y)
+
+---------- CONFIG_DEV_DAX -----------------
+Config: CONFIG_DEV_DAX
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX=m
+Actual value:     
+
+Config: CONFIG_DEV_DAX_PMEM
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_PMEM=m
+Actual value:     
+
+Config: CONFIG_DEV_DAX_KMEM
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_KMEM=m
+Actual value:     
+
+Config: CONFIG_DEV_DAX_PMEM_COMPAT
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_PMEM_COMPAT=m
+Actual value:     
+
+  Config 'DEV_DAX' has the following Direct dependencies (=n):
+        TRANSPARENT_HUGEPAGE(=n) && DAX(=y)
+
+---------- CONFIG_DEV_DAX_PMEM -----------------
+Config: CONFIG_DEV_DAX_PMEM
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_PMEM=m
+Actual value:     
+
+--
+Config: CONFIG_DEV_DAX_PMEM_COMPAT
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_PMEM_COMPAT=m
+Actual value:     
+
+  Config 'DEV_DAX_PMEM' has the following Direct dependencies (=n):
+        LIBNVDIMM(=m) && NVDIMM_DAX(=y) && DEV_DAX(=n) && DAX(=y)
+
+---------- CONFIG_DEV_DAX_KMEM -----------------
+Config: CONFIG_DEV_DAX_KMEM
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_KMEM=m
+Actual value:     
+
+No reference to DEV_DAX_KMEM found
+
+---------- CONFIG_DEV_DAX_PMEM_COMPAT -----------------
+Config: CONFIG_DEV_DAX_PMEM_COMPAT
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/intel-persistent-memory/intel-x86-64-dax.cfg
+Requested value:  CONFIG_DEV_DAX_PMEM_COMPAT=m
+Actual value:     
+
+No reference to DEV_DAX_PMEM_COMPAT found
+
+---------- CONFIG_MEDIA_TUNER -----------------
+Config: CONFIG_MEDIA_TUNER
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/media/media-tuners.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/features/media/media-tuners.cfg /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/intel-dev.cfg
+Requested value:  CONFIG_MEDIA_TUNER=y
+Actual value:     CONFIG_MEDIA_TUNER=m
+
+No reference to MEDIA_TUNER found
+
+---------- CONFIG_TRANSPARENT_HUGEPAGE -----------------
+Config: CONFIG_TRANSPARENT_HUGEPAGE
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/intel-dev.cfg
+Requested value:  CONFIG_TRANSPARENT_HUGEPAGE=y
+Actual value:     
+
+Config: CONFIG_TRANSPARENT_HUGEPAGE_ALWAYS
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/intel-dev.cfg
+Requested value:  CONFIG_TRANSPARENT_HUGEPAGE_ALWAYS=y
+Actual value:     
+
+  Config 'TRANSPARENT_HUGEPAGE' has the following Direct dependencies (=n):
+        HAVE_ARCH_TRANSPARENT_HUGEPAGE(=y) && !PREEMPT_RT(=y) (=n)
+
+---------- CONFIG_TRANSPARENT_HUGEPAGE_ALWAYS -----------------
+Config: CONFIG_TRANSPARENT_HUGEPAGE_ALWAYS
+From: /home/b656/project/build/tmp-x86-glibc/work/intel_corei7_64-ese-linux/linux-intel-ese-lts-rt-5.4/5.4++gitAUTOINC+4fa886b20f_db8c85db08-r0/kernel-source/.kernel-meta/configs/v5.4/standard/intel-dev.cfg
+Requested value:  CONFIG_TRANSPARENT_HUGEPAGE_ALWAYS=y
+Actual value:     
+
+  Config 'TRANSPARENT_HUGEPAGE_ALWAYS' has the following Direct dependencies (=n):
+        <choice>
+
+
+WARNING: mc:x86:gstreamer1.0-libav-1.19.0.1-r0 do_configure: QA Issue: gstreamer1.0-libav: invalid PACKAGECONFIG: libav [invalid-packageconfig]
+WARNING: mc:x86:linux-intel-ese-lts-5.4-dpdk-19.11.5-r0 do_package: FILES contains file '/usr/share/dpdk/x86_64-native-linuxapp-gcc/include/drivers' which resides under a directory symlink. Please fix the recipe and use the real path for the file.
+WARNING: Runqeueue deadlocked on deferred tasks, forcing task mc:x86:/home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-core/packagegroups/packagegroup-core-buildessential.bb:do_package
+WARNING: Runqeueue deadlocked on deferred tasks, forcing task mc:x86:/home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-core/update-rc.d/update-rc.d_0.8.bb:do_package
+WARNING: Runqeueue deadlocked on deferred tasks, forcing task mc:x86:/home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-devtools/autoconf-archive/autoconf-archive_2019.01.06.bb:do_package
+WARNING: Runqeueue deadlocked on deferred tasks, forcing task mc:x86:/home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-extended/timezone/tzdata.bb:do_package
+WARNING: Runqeueue deadlocked on deferred tasks, forcing task mc:x86:/home/b656/project/build/../intel-embedded-system-enabling/meta/recipes-support/ca-certificates/ca-certificates_20190110.bb:do_package
+NOTE: Tasks Summary: Attempted 11935 tasks of which 3 didn't need to be rerun and all succeeded.
+
+Summary: There were 41 WARNING messages shown.
